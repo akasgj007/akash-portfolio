@@ -9,7 +9,14 @@ export default function Hero() {
       </p>
       <div className="mt-4">
         <a
-          href="https://akashbabu-resume.tiiny.site"
+          href="https://drive.google.com/file/d/1oW_NHRD-tNdbTTkb8YRl9bF5kb93p3aT/view"
+          target="_blank"
+          className="btn btn-outline-primary me-2"
+        >
+          View Resume
+        </a>
+        <a
+          href="https://drive.google.com/uc?export=download&id=1oW_NHRD-tNdbTTkb8YRl9bF5kb93p3aT"
           className="btn btn-secondary"
         >
           Download Resume

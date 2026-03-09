@@ -10,16 +10,16 @@ function Projects() {
     {
       title: "Her Brownie Website",
       description: "Bakery website with modern UI.",
-      tech: "HTML, CSS, JS",
+      tech: "React, Firebase",
       github: "https://github.com/akasgj007/her-brownies-website",
       demo: "https://her-brownies-website.vercel.app/",
     },
     {
-      title: "RedStore E-Commerce",
-      description: "E-commerce UI built using HTML and CSS.",
-      tech: "HTML, CSS",
-      github: "#",
-      demo: "#",
+      title: "Akish Invite",
+      description: "Digital invitation website built with modern UI.",
+      tech: "React, Firebase",
+      github: "https://github.com/akasgj007/akishinvite",
+      demo: "https://akishinvite.vercel.app/",
     },
   ];
 
