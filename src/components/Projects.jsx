@@ -4,15 +4,15 @@ function Projects() {
       title: "LeetCode Tracker",
       description: "React + Firebase app to track coding progress.",
       tech: "React, Firebase",
-      github: "#",
-      demo: "#",
+      github: "https://github.com/akasgj007/leetcode-tracker-solutions",
+      demo: "https://leetcode-tracker-solutions.vercel.app/",
     },
     {
       title: "Her Brownie Website",
       description: "Bakery website with modern UI.",
       tech: "HTML, CSS, JS",
-      github: "#",
-      demo: "#",
+      github: "https://github.com/akasgj007/her-brownies-website",
+      demo: "https://her-brownies-website.vercel.app/",
     },
     {
       title: "RedStore E-Commerce",
@@ -39,11 +39,19 @@ function Projects() {
                 <p className="text-muted">{project.tech}</p>
 
                 <div className="d-flex gap-2">
-                  <a href={project.github} className="btn btn-dark btn-sm">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    className="btn btn-dark btn-sm"
+                  >
                     GitHub
                   </a>
 
-                  <a href={project.demo} className="btn btn-primary btn-sm">
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    className="btn btn-primary btn-sm"
+                  >
                     Live Demo
                   </a>
                 </div>
