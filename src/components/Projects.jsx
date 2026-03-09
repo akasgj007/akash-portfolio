@@ -1,3 +1,7 @@
+import akishinvite from "../assets/akishinvite.png";
+import herbrownie from "../assets/herbrownie.png";
+import leetcodetracker from "../assets/leetcodetracker.png";
+
 function Projects() {
   const projects = [
     {
@@ -6,6 +10,7 @@ function Projects() {
       tech: "React, Firebase",
       github: "https://github.com/akasgj007/leetcode-tracker-solutions",
       demo: "https://leetcode-tracker-solutions.vercel.app/",
+      image: akishinvite,
     },
     {
       title: "Her Brownie Website",
@@ -13,6 +18,7 @@ function Projects() {
       tech: "React, Firebase",
       github: "https://github.com/akasgj007/her-brownies-website",
       demo: "https://her-brownies-website.vercel.app/",
+      image: herbrownie,
     },
     {
       title: "Akish Invite",
@@ -20,6 +26,7 @@ function Projects() {
       tech: "React, Firebase",
       github: "https://github.com/akasgj007/akishinvite",
       demo: "https://akishinvite.vercel.app/",
+      image: leetcodetracker,
     },
   ];
 
@@ -32,6 +39,7 @@ function Projects() {
           <div className="col-md-4" key={index}>
             <div className="card shadow-sm mb-4">
               <div className="card-body">
+                <img src={project.image} className="card-img-top" />
                 <h5 className="card-title">{project.title}</h5>
 
                 <p className="card-text">{project.description}</p>
