@@ -1,28 +1,34 @@
-import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import Contacts from "./components/Contact";
+import Contact from "./components/Contact";
+
+import Admin from "./pages/Admin";
 
 function App() {
-  const [theme, setTheme] = useState("light");
-
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-    console.log(theme);
-  };
-
   return (
-    <div
-      className={theme === "dark" ? "bg-dark text-light" : "bg-light text-dark"}
-    >
-      <Navbar toggleTheme={toggleTheme} theme={theme}></Navbar>
-      <Hero></Hero>
-      <About></About>
-      <Projects></Projects>
-      <Contacts></Contacts>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <Projects />
+              <Contact />
+            </>
+          }
+        />
+
+        <Route path="/admin" element={<Admin />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
