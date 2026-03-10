@@ -10,7 +10,7 @@ function Projects() {
       tech: "React, Firebase",
       github: "https://github.com/akasgj007/leetcode-tracker-solutions",
       demo: "https://leetcode-tracker-solutions.vercel.app/",
-      image: akishinvite,
+      image: leetcodetracker,
     },
     {
       title: "Her Brownie Website",
@@ -26,7 +26,7 @@ function Projects() {
       tech: "React, Firebase",
       github: "https://github.com/akasgj007/akishinvite",
       demo: "https://akishinvite.vercel.app/",
-      image: leetcodetracker,
+      image: akishinvite,
     },
   ];
 
